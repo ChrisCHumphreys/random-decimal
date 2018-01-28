@@ -20,10 +20,11 @@ float-generator.cpp
 
 Usage:
 To compile just type `make` at command line. To run at linux or mac
-command line run `float-generator <output-filename> <count>` where
+command line run `./float-generator <output-filename> <count>` where
 output filename is whatever you want the final file to be named, there
 can be no spaces in output-filename, and count is the number of random
-numbers you want in the file.
+numbers you want in the file.  The ouptput file will be placed in the
+same directory as it was ran in.
 
 TODO:
 Have a flag which determines the number of decimal places used.  Have
