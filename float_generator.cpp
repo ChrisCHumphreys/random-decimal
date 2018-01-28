@@ -2,7 +2,7 @@
  * Name: Chris Humphreys
  * Description: Program that generates a text file that consists of strings
  * 		representing floats.  These are two decimal places long and
- * 		each value is written on a new ling.  Command line arguments 
+ * 		each value is written on a new line.  Command line arguments 
  *		in order are <name of file to be created>, <number of values>.
  * File: float_generator.cpp
  *
@@ -41,7 +41,6 @@ int main(int argc, char* argv[])
 
 	// prepare and open filestream
 	ofstream outStream;
-
 	outStream.open(argv[1]);
 
 	for (int i = 0; i < numOfLines; i++)
@@ -49,6 +48,7 @@ int main(int argc, char* argv[])
 		outStream << randomInt() << randomInt() << "." << randomInt() << randomInt() << endl;
 	}
 
+	// close up the stream
 	outStream.close();
 
 	return 0;
